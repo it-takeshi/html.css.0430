@@ -1,0 +1,442 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*ーーーーーーーーーーー*/
+/* ■メインビジュアル */
+.main_visual{
+	background: url(../img/Cheese\ with\ mouse\ stock\ vector_\ Illustration\ of\ background\ -\ 118959176\ 2.jpeg);
+		background-size: cover;
+	width: 100%;  height: 450px;
+	display: flex;
+	justify-content: center; align-items: center;
+	flex-direction: column;
+}
+
+.main_visual{
+	animation-name: fadein;
+	animation-duration: 10s;
+}
+@keyframes fadein{
+	from{
+	opacity: 0;
+	transform: translatesy(20px);
+	}
+	to{
+	opacity: 1;
+	transform: translatey(0);
+	}
+}
+
+
+
+
+.main_visual__title{
+	font-size: 46px; 	color: white;
+	margin-bottom: 40px;
+}
+.main_visual__subtitle{
+	font-size: 36px;	color: white;
+}
+/* ■メインビジュアルここまで */
+
+
+/*  ■Nav */
+.nav{
+	display: flex;
+	height: 80px;
+	border-color: #efefef;
+	background-color: goldenrod;
+}
+.nav_logo{
+	width:30%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav_logo img{
+	width: 50%;
+}
+.nav_list{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/* ■Navここまで */
+
+/* ■About */
+/*  */
+.about{
+	margin: 120px 0 80px 0;  
+	
+}
+.text-center{
+	text-align: center;
+}
+.about_wrapper{
+	width:960px;
+	margin: auto;
+}
+.text-center:first-child {
+	font-size: 24px;  
+	color: #ffd61a;
+	margin-bottom: 24px;
+}
+.text-center:nth-child(2) {
+	margin-bottom: 64px;
+}
+.text-center:nth-child(3) {
+	margin-bottom: 40px;
+}
+.text-center:nth-child(4) {
+	margin-bottom: 16px;
+}
+.text-center:nth-child(5) {
+	margin-bottom: 16px;
+}
+.about_small_img1{
+	position: absolute;
+	top: 650px;
+	left:30px;
+}
+.about_small_img1 img{
+	width: 25%;
+	height: 25%;
+}
+.about_small_img2{
+	position: absolute;
+	top: 670px;
+	right:0px;
+	text-align: right;
+}
+.about_small_img2 img{
+	width: 50%;
+	height: 20%;
+}
+
+/* ■About ここまで */
+
+/* ■slide */
+.slide{
+	height: 300px;
+	width: 100%;
+}
+.slide_image{
+	height: 100%;
+	width: 100%;
+	background: url(../img/about-image.jpg);
+	background-size: cover;
+	animation:bgiLoop 120s linear infinite;
+}
+@keyframes bgiLoop {
+	/* 開始位置 */
+	0% {background-position: 0 0;}
+	/* 終了位置 */
+	100% {background-position:2000% 0;}
+}
+/* ■slideここまで */
+
+/* ■Course */
+.course{
+	width: 100%;
+	background-color: khaki;
+}
+.course_text{
+	width: 960px;
+	margin: auto;
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 64px 64px;
+}
+.course_title{
+	font-size: 24px;
+	color: #222222;
+	padding-bottom: 10px;
+}
+.course_01{
+	display: flex;
+}
+.course_01_img{
+	width: 50%;
+}
+.course_01_img img{
+	width: 100%;
+}
+.course_01_txt{
+	width: 50%;
+	padding-left: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.course_01_txt_ttl{
+	margin-bottom: 40px;
+}
+.course_02{
+	display: flex;
+}
+	.course_02_txt{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.course_02_txt_ttl{
+		margin-bottom: 40px;
+	}
+.course_02_img{
+	width: 50%;
+}
+.course_02_img img{
+	width: 100%;
+	object-fit: cover;
+}
+
+.course_03{
+	display: flex;
+}
+.course_03_img{
+	width: 50%;
+}
+.course_03_img img{
+	width: 100%;
+}
+.course_03_txt{
+	width: 50%;
+	padding-left: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.course_03_txt_ttl{
+	margin-bottom: 40px;
+}
+/* ■Course　ここまで */
+
+/* ■NEWS */
+.news_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding:64px 0 64px 0;
+}
+.news_title h2{
+	font-size: 24px;
+	color:#ffd61a;
+}
+
+.newsbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.newsbox_01{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 32px;
+}
+.newsbox_01_img{
+	margin-bottom: 32px;
+
+}
+.newsbox_01_img img{
+
+}
+.newsbox_01_txt{
+	height: 200px;
+	width: 300px;
+}
+.newsbox_01_txt_date{
+	margin-bottom: 24px;
+}
+.newsbox_01_txt_p{
+	font-size: 14px;
+}
+/* ■NEWS ここまで */
+
+/* ■More  */
+.change{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 60px;
+	background-color: #ffd61a;
+	color:#efefef;
+	font-size: 21px;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+.more_01_txt_p{
+	font-size: 30px;
+	text-align: center;
+}
+.more_img{
+	margin: auto;
+	width: 800px;
+}
+.more_img img{
+
+}
+.red{
+	color: red;
+	font-weight: 200px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.more_url{
+	margin: auto;
+}
+
+
+/* More ここまで */
+
+/* ■Access */
+.access{
+	margin: 64px 0 80px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+flex-direction: column;
+}
+.access_wrapper{
+	padding-top: 64px;
+	margin: auto;
+	width: 600px;
+}
+.access_inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+.access_title{
+	text-align: center;
+	width: 200px
+}
+.access_item{
+	width: 400px;
+}
+
+/* ■Accessここまで */
+
+/* ■Contact */
+.contact{
+margin-bottom: 120px;
+}
+.contact_txt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 80px;
+}
+.contact_txt_p1{
+	margin-bottom: 20px;
+}
+.contact_txt_p2{
+	margin-bottom:  32px; ;
+}
+
+.contact_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.form_wrapper{
+	width: 600px;
+	margin: auto;
+}
+.form_inner{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+.form_title{
+	width: 200px ;
+}
+.form_item{
+	width: 328px;
+}
+.form_parts{
+	border: solid 1px #bfbfbf;
+	font-size: 16px;
+	width: 100%;
+	box-sizing: border-box;
+}
+textarea{
+	border: solid 1px #bfbfbf;	
+	width: 328px;
+	height: 108px;
+}
+.submit_wrapper{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.submit{
+	margin: auto;
+	font-size: 18px;
+	background-color: #ffd61a;
+	border-radius: 50%;
+	color: #efefef;
+	width: 298px;
+	height: 54px;
+}
+
+/* ■Contact　ここまで */
+
+/* footer */
+.footer{
+	position: relative;
+	background-color:#ffd61a;
+	padding: 32px;
+	color: #efefef;
+}
+.icon-up{
+	color:#efefef;
+}
+.btn-pagetop{
+	display: block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius:50%;
+	top: -78px;
+	right:0;
+	background-color: #ffd61a;
+}
+.copyrights {
+	font-size: 18px;
+}
+.text-center{
+	text-align: center;
+}
+/* footer ここまで */
