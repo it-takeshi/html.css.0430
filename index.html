@@ -21,26 +21,30 @@
     <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
 </head>
 
-<!-- ■メインビジュアル  -->
-    <section class="main_visual">
-        <h1 class="main_visual__title">セカイを変えるチーズを作ろう</h1>
-        <h2 class="main_visual__subtitle">チーズ職人養成学校「チーズアカデミーFUKUOKA」</h2>
-    </section>
-<!-- ■メインビジュアルここまで -->
+<!-- ■head_slide -->
+<section class="head_slide">
+    <div class="head_slide_image"></div>
+    <h1 class="head_slide_title">セカイを変えるチーズを作ろう</h1>
+    <h2 class="head_slide_subtitle1">チーズ職人養成学校</h2>
+    <h2 class="head_slide_subtitle2">「チーズアカデミーFUKUOKA」</h2>
+</section>
+    <div class="head_logo">
+        <img src="img/header_logo.png" alt="">
+    </div>
+<!-- ■head_slide ここまで-->
 
 
 <!-- Nav -->
 <section class="nav">
-    <div class="nav_logo">
-        <img src="img/header_logo.png" alt="">
-    </div>
     <ul class="nav_list">
-        <li><a href="#about">ABOUT</a></li>
+        <li>
+        <a href="#about">ABOUT</a></li>   
         <li><a href="#course">COURSE</a></li>
         <li><a href="#news">NEWS</a></li>
         <li><a href="#access">ACCESS</a></li>
         <li><a href="#contact">CONTACT</a></li>
     </ul>
+    </div>
 </section>
 
 <!-- ■Nav ここまで -->
@@ -149,18 +153,18 @@
 <!-- ■NEWS ここまで -->
 
 <!-- More -->
+<div class="more_box">
 <span class="change"  onclick="obj=document.getElementById('open1').style; obj.display=
 (obj.display=='none')?'block':'none';">
 <a style="cursor:pointer;">▼ More</a>
 </span>
-<ul>
+</div>
+
 <!-- 折り畳まれる部分 -->
 <span id="open1" style="display: none; clear: both;">
 <li class="more_img"><img src="img/Seiji Matsumoto.jpeg" alt="特売日！"> <p class="more_01_txt_p">2021年04月30日<br>
     チーズアカデミー卒業生のコスゲさんによる<br>「Kosuge Pizza」が天神でオープン1周年！<br><span class="red">特売日！全商品半額SALE</span></p>
 </li>
-<li class="more_url"><a href="URL">https://gsacademy.jp
-    </a></li>
 </span>
 </ul>
 <!-- Moreここまで -->
